@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;800&display=swap');
+
+main {
+    background: #0a2228;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.box-login-geral {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.div-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-login {
+    font-family: 'Sora', sans-serif;
+    color: #FFF6D4;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.box-login {
+    background-color: #0a2228;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.box-login h1 {
+    color:#C3C8D4;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+input {
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 2px 1px #C3C8D4;
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 10px 42px;
+    width: -webkit-fill-available;
+    color: #fff;
+}
+
+
+input::after {
+    position: absolute;
+    content: "X";
+    left: -5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.btn-login {
+    height: 55px;
+    background: linear-gradient(90.3deg, #F9903A 0.16%, #BF3900 101.62%);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Sora', sans-serif;
+    width: 100%;
+}
+
+.btn-login:hover {
+    cursor: pointer;
+}
+
+.box-input-email{
+    position: relative;
+}
+
+.box-input-email::before{
+    position: absolute;
+    content: url(../../assets/main/login/sms.png);
+    left: 4%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.box-input-senha{
+    position: relative;
+}
+
+.box-input-senha::before{
+    position: absolute;
+    content: url(../../assets/main/login/key-square.png);
+    left: 4%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .box-input-senha::after{
+    position: absolute;
+    content: url(../../assets/main/login/eye.png);
+    right: 4%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.box-img-login img{
+    width: 60%;
+}

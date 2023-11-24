@@ -1,0 +1,63 @@
+<div class="body">
+  <div class="header">
+    <button (click)="NavegarVoltar()" class="buttons">
+      <img src="../../assets/images/entradas/Arrow.png" alt="Left Arrow" />
+    </button>
+    <div class="logo">
+      <img src="../../assets/images/entradas/logo.png" alt="EasyEats Logo" />
+    </div>
+  </div>
+  <div class="organizar-titulos">
+    <div class="titulo">
+      <h1>Carrinho</h1>
+    </div>
+    <div class="titulo">
+      <h1>Cozinha</h1>
+    </div>
+    <div class="titulo">
+      <h1>Entregue</h1>
+    </div>
+  </div>
+</div>
+<ion-content>
+  <div class="body body2">
+    <div class="articles">
+      <div class="itens">
+        <div class="item" *ngFor="let prato of pratosCarrinho">
+          <div class="info">
+            <div class="foto-carrinho"><img [src]="prato.link" alt="" /></div>
+            <h3>{{ prato.nome }}</h3>
+            <button
+              class="button-lixo"
+              (click)="DeletarCarrinho(prato.id)"
+            >
+              <img src="../../assets/images/carrinho/lixo.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="itens">
+        <div class="item" *ngFor="let prato of pratosCozinha">
+          <div class="info">
+            <div class="foto-carrinho"><img [src]="prato.link" alt="" /></div>
+            <h3>{{ prato.nome }}</h3>
+          </div>
+        </div>
+      </div>
+      <div class="itens">
+        <div class="item" *ngFor="let prato of pratosEntregue">
+          <div class="info">
+            <div class="foto-carrinho"><img [src]="prato.link" alt="" /></div>
+            <h3>{{ prato.nome }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<div class="footer body">
+  <button class="buttons-escrito" expand="block" (click)="presentToast('top')" (click)="EnviarCozinha()">
+    Enviar para Cozinha
+  </button>
+  <button class="buttons-escrito">Vizualizar Conta</button>
+</div>

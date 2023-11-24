@@ -1,0 +1,17 @@
+<div class="box-bg-lista">
+    <div class="flex">
+        <div class="box-100">
+            <div class="box-right-form">
+                <input #usuario type="text" name="nome" id="nome" placeholder="Usuário da Mesa">
+                <input #senha type="text" name="senha" id="senha" placeholder="Senha da Mesa">
+                <input #nome type="text" name="mesa" id="mesa" placeholder="Identificação da Mesa">
+                <input #descricao type="text" name="descicao" id="descicao" placeholder="Descrição">
+                <div class="box-btn-adicionar-prato">
+                    <button class="btn-left-adc-btn" (click)="closeModalAdicionar()">Cancelar</button>
+                    <button (click)="cadastroPrato(usuario.value, senha.value, nome.value, descricao.value )"
+                        class="btn-right-adc-btn">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

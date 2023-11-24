@@ -1,0 +1,33 @@
+<div class="box-bg-modal text-center">
+  <div class="box-btns-modal">
+      <div class="container">
+          <div class="flex-between">
+              <div class="box-100">
+                  <div class="box-input-adicionar">
+                      <input type="text" placeholder="Novo Usuario" usuario="usuario" id="usuario" #usuario>
+                  </div>
+              </div>
+              <div class="box-100">
+                  <div class="box-input-adicionar">
+                      <input type="text" placeholder="Senha de Acesso" name="senha" id="senha" #senha>
+                  </div>
+              </div>
+              <div class="box-100">
+                <div class="box-input-adicionar">
+                    <input type="text" placeholder="Nome do Restaurante" name="nome" id="nome" #nome>
+                </div>
+            </div>
+              <div class="box-50">
+                  <div class="box-btn-cancelar">
+                      <button (click)="fecharModal()" class="modal_btn_cancelar">Cancelar</button>
+                  </div>
+              </div>
+              <div class="box-50">
+                  <div class="box-btn-adicionar">
+                      <button (click)="cadastroRestaurante(usuario.value, senha.value, nome.value)" >Adicionar</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

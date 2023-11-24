@@ -1,0 +1,47 @@
+<div class="body">
+  <div class="header">
+    <button (click)="NavegarVoltar()" class="buttons">
+      <img src="../../assets/images/entradas/Arrow.png" alt="Left Arrow" />
+    </button>
+    <div class="logo">
+      <img src="../../assets/images/entradas/logo.png" alt="EasyEats Logo" />
+    </div>
+    <button class="buttons"><img src="../../assets/images/cardapio/Carrinho.png" alt="Carrinho" (click)="NavegarParaCarrinho()"></button>
+  </div>
+  <div class="titulo">
+    <h1>Bebidas</h1>
+  </div>
+</div>
+<ion-content>
+  <div class="article">
+    <div class="container">
+      <div class="container">
+        <div class="cards">
+          <div class="card" *ngFor="let prato of pratos">
+            <img class="foto" [src]="prato.link" alt="" />
+            <h3>{{ prato.nome }}</h3>
+            <div class="info-inferior">
+              <p><span class="span">R$</span> {{ prato.preco }}</p>
+              <button
+                expand="block"
+                class="buttons-card"
+                (click)="presentToast('top')"
+                (click)="
+                  Carrinho(
+                    prato.nome,
+                    prato.preco,
+                    prato.categoria,
+                    prato.id_restaurante,
+                    prato.link
+                  )
+                "
+              >
+                <img src="../../assets/images/entradas/Carrinho.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,31 @@
+<main>
+    <div class="box-login-geral">
+        <div class="container">
+            <div class="flex">
+                <div class="box-50">
+                    <div class="box-img-login">
+                        <img src="../../assets/main/login/login_img.png" alt="Login Home" class="img-responsive">
+                    </div>
+                </div>
+                <div class="box-50">
+                    <div class="box">
+                        <div class="box-login">
+                            <h1>Login</h1>
+                            <div class="inputs">
+                                <div class="box-input-email">
+                                    <input placeholder="Usuário" type="text" id="nome" #usuario>
+                                </div>
+                                <div class="box-input-senha">
+                                    <input placeholder="Senha" type="password" id="senha" #senha>
+                                </div>
+                                <div class="box-btn-form-login">
+                                    <button (click)="Login(usuario.value, senha.value)" class="btn-login">Entrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

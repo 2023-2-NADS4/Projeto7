@@ -1,0 +1,97 @@
+.box-bg-modal {
+  background: #1D4652;
+  padding: 57px 30px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.box-modal-component{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+
+.box-first-text-modal p {
+  color: #C3C8D4;
+  line-height: 25px;
+}
+
+.box-second-text-modal p {
+  color: #C3C8D4;
+  line-height: 20px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.box-btns-modal {
+  margin: 20px 0;
+}
+
+.box-btn-cancelar button {
+  background: red;
+  color: #fff;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  filter: drop-shadow(0 1px 2px #000);
+  font-size: 16px;
+  transition: .6s all ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.box-btn-cancelar button:hover{
+  transform: scale(1.07);
+}
+
+.box-btn-excluir button {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  filter: drop-shadow(0 1px 2px #000);
+  font-size: 16px;
+  transition: .6s all ease;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.box-btn-excluir button:hover{
+  transform: scale(1.07);
+}
+
+.box-btn-restringir button {
+  background: #2A4F59;
+  color: #fff;
+  border: 1px solid #2A4F59;
+  border-radius: 4px;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  filter: drop-shadow(0 1px 2px #000);
+  font-size: 16px;
+  transition: .6s all ease;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-btn-restringir img{
+  padding-right: 10px;
+  width: 19px;
+}
+
+.box-btn-restringir button:hover{
+  transform: scale(1.07);
+}

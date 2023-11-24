@@ -1,0 +1,24 @@
+<div class="box-bg-login">
+    <div class="box-second-bg-login">
+        <div class="box-img-login">
+            <img src="../../assets/images/login/logo90.png" alt="EasyEats Login">
+        </div>
+        <div class="box-title-login">
+            <h1>EasyEats</h1>
+        </div>
+        <div class="box-slogan-login">
+            <p>Tecnologia a Serviço do Seu Apetite</p>
+        </div>
+        <div class="box-input-login">
+            <label for="usuario">Nome de Usuário</label>
+            <input type="text" name="usuario" id="usuario" placeholder="Nome do Usuário" #usuario>
+        </div>
+        <div class="box-input-login">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="*********" #senha>
+        </div>
+        <div class="box-btn-login">
+            <button (click)="Login(usuario.value, senha.value)">Entrar</button>
+        </div>
+    </div>
+</div>

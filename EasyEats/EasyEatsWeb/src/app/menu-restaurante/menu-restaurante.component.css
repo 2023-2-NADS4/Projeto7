@@ -1,0 +1,49 @@
+.box-title-menu-restaurantes h1{
+    color: #C9C9C9;
+    font-weight: 800;
+    font-size: 46px;
+    padding: 15px;
+}
+
+.box-link-card{
+    text-decoration: none;
+    transition: .6s all ease;
+}
+
+.box-card-menu-restaurante:hover{
+    transform: scale(1.04);
+}
+
+
+.box-card-menu-restaurante {
+    background: linear-gradient(90.3deg, #12353F 0.16%, #041C23 101.62%);
+    padding: 31px;
+    border-radius: 17px;
+    margin: 20px 0;
+    transition: .6s all ease;
+}
+
+.box-title-card {
+    text-align: center;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.box-title-card h2{
+    color: #c9c9c9;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.box-text-card{
+    text-align: center;
+}
+
+.box-text-card p{
+    color: #C9C9C9;
+    font-size: 15px;
+}

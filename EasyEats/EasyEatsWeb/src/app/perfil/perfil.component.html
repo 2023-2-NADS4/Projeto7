@@ -1,0 +1,51 @@
+<app-funcao-autenticadora></app-funcao-autenticadora>
+<main>
+
+    <div class="container">
+        <div class="flex">
+            <div class="box-50">
+                <a href="/menu-restaurante">
+                    <img src="../../assets/main/left-arrow.png" alt="Left Arrow">
+                </a>
+            </div>
+            <div class="box-50 text-right">
+                <app-header></app-header>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex">
+            <div class="box-100">
+                <div class="box-title-perfil">
+                    <h1>Perfil</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box-bg-lista">
+            <div class="flex">
+                <div class="box-50">
+                    <div class="flex-between">
+                        <form class="form-upload">
+                            <label class="input-personalizado">
+                                <span class="botao-selecionar">+</span>
+                                <img class="imagem" />
+                                <input type="file" class="input-file" accept="image/*">
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="box-50">
+                    <div class="box-right-form">
+                        <input type="text" name="" id="" placeholder="Nome do Restaurante" #nome>
+                        <input type="text" name="" id="" placeholder="Endereço/ Unidade" #endereco>
+                        <input type="text" name="" id="" placeholder="Descrição" #descricao>
+                        <button (click)="AlterarPerfil(nome.value, endereco.value, descricao.value)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

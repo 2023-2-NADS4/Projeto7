@@ -1,0 +1,75 @@
+<div class="box-bg-lista">
+  <div class="flex">
+    <div class="box-50">
+      <div class="flex-between">
+        <form class="form-upload">
+          <label class="input-personalizado">
+            <span class="botao-selecionar">+</span>
+            <img class="imagem" />
+            <input
+              type="file"
+              class="form-control input-file"
+              accept="image/*"
+              (change)="fileupload($event)"
+            />
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="box-50">
+      <div class="box-right-form">
+        <form [formGroup]="formulario">
+          <input
+            #nome
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Nome do Prato"
+            formControlName="teste"
+          />
+          <input
+            #descricao
+            type="text"
+            name="descricao"
+            id="descricao"
+            placeholder="Descrição do Prato"
+          />
+          <!-- <input #categoria type="text" name="categoria" id="categoria" placeholder="Categoria do Prato"> -->
+          <select #categoria name="categoria" id="categoria">
+            <option value="">Escolha uma Categoria</option>
+            <option value="Entrada">Entrada</option>
+            <option value="Principal">Principal</option>
+            <option value="Sobremesa">Sobremesa</option>
+            <option value="Bebida">Bebida</option>
+          </select>
+          <input
+            #preco
+            type="text"
+            name="preco"
+            id="preco"
+            placeholder="Preço"
+          />
+          <div class="box-btn-adicionar-prato">
+            <button class="btn-left-adc-btn" (click)="closeModalAdicionar()">
+              Cancelar
+            </button>
+            <button
+              (click)="
+                cadastroImagem(
+                  nome.value,
+                  descricao.value,
+                  preco.value,
+                  categoria.value
+                )
+              "
+              class="btn-right-adc-btn"
+            >
+              Salvar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+       
+  </div>
+</div>

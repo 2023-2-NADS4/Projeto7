@@ -1,0 +1,113 @@
+<app-funcao-autenticadora></app-funcao-autenticadora>
+<main>
+  <div class="container">
+    <div class="flex">
+      <div class="box-50">
+        <a href="/menu-restaurante">
+          <img src="../../assets/main/left-arrow.png" alt="Left Arrow" />
+        </a>
+      </div>
+      <div class="box-50 text-right">
+        <app-header></app-header>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="flex-between">
+      <div class="box-50">
+        <div class="box-title-lista text-left">
+          <h1>Cardápio</h1>
+        </div>
+      </div>
+      <div class="box-50">
+        <div class="box-btn-adicionar-lista text-right">
+          <button (click)="openModalAdicionar()">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box-bg-lista ">
+     <div class="flex-start">
+      <div class="box-100">
+        <div class="flex-between box-bg-lista box-bg-lista-principal">
+          <div class="box-20">
+            <div class="box-img-cardapio">
+              <p>Imagem</p>
+            </div>
+          </div>
+          <div class="box-20">
+            <div class="box-item-cardapio">
+              <p>Item</p>
+            </div>
+          </div>
+          <div class="box-30">
+            <div class="box-desc-cardapio">
+              <p>Descrição</p>
+            </div>
+          </div>
+          <div class="box-10">
+            <div class="box-desc-cardapio">
+              <p>Categoria</p>
+            </div>
+          </div>
+          <div class="box-10">
+            <div class="box-preco-cardapio text-right">
+              <p>Preço</p>
+            </div>
+          </div>
+          <div class="box-10"></div>
+        </div>
+      </div>
+     </div>
+      <div class="flex-start box-overflow-cardapio">
+        <div class="box-100" *ngFor="let prato of pratos">
+          <div class="flex-between box-btn-item-lista">
+            <div class="box-20">
+              <div class="box-img-cardapio">
+                <img [src]="prato.link" alt=""/>
+              </div>
+            </div>
+            <div class="box-20">
+              <div class="box-item-cardapio">
+                <p>{{ prato.nome }}</p>
+              </div>
+            </div>
+            <div class="box-30">
+              <div class="box-desc-cardapio">
+                <p>{{ prato.descricao }}</p>
+              </div>
+            </div>
+            <div class="box-10">
+              <div class="box-desc-cardapio">
+                <p>{{ prato.categoria }}</p>
+              </div>
+            </div>
+            <div class="box-10">
+              <div class="box-preco-cardapio text-right">
+                <p>R$ {{ prato.preco }}</p>
+              </div>
+            </div>
+            <div class="box-10">
+              <div class="box-btn-lixeira text-right">
+                <textarea class="pratoID" #pratoID>{{ prato.id }}</textarea>
+                <button (click)="openModal(pratoID.value)" class="box-btn-lixeira">
+                  <img
+                    src="../../assets/main/lista/lixeira.png"
+                    alt="Lixeira"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="box_modal_cardapio-adicionar">
+    <app-modal-adicionar-prato></app-modal-adicionar-prato>
+  </div>
+  <div id="box_modal_cardapio-excluir">
+    <app-modal-excluir-prato></app-modal-excluir-prato>
+  </div>
+</main>

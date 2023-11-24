@@ -1,0 +1,103 @@
+<app-funcao-autenticadora></app-funcao-autenticadora>
+<main>
+  <div class="container">
+    <div class="flex">
+      <div class="box-50">
+        <a href="/menu-restaurante">
+          <img src="../../assets/main/left-arrow.png" alt="Left Arrow" />
+        </a>
+      </div>
+      <div class="box-50 text-right">
+        <app-header></app-header>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="flex-between">
+      <div class="box-50">
+        <div class="box-title-lista text-left">
+          <h1>Mesas</h1>
+        </div>
+      </div>
+      <div class="box-50">
+        <div class="box-btn-adicionar-lista text-right">
+          <button (click)="openModalAdicionar()">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box-bg-lista">
+      <div class="flex">
+        <div class="box-100">
+          <div class="flex-between box-bg-lista">
+            <div class="box-20">
+              <div class="box-img-cardapio">
+                <p>Mesa</p>
+              </div>
+            </div>
+            <div class="box-20">
+              <div class="box-desc-cardapio">
+                <p>Usuario</p>
+              </div>
+            </div>
+            <div class="box-20">
+              <div class="box-desc-cardapio">
+                <p>Senha</p>
+              </div>
+            </div>
+            <div class="box-40">
+              <div class="box-desc-cardapio">
+                <p>Descrição</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-100" *ngFor="let mesa of mesas">
+          <div class="flex-between box-btn-item-lista">
+            <div class="box-20">
+              <div class="box-img-cardapio">
+                <p>{{ mesa.nome }}</p>
+              </div>
+            </div>
+            <div class="box-20">
+              <div class="box-desc-cardapio">
+                <p>{{ mesa.usuario }}</p>
+              </div>
+            </div>
+            <div class="box-20">
+              <div class="box-desc-cardapio">
+                <p>{{ mesa.senha }}</p>
+              </div>
+            </div>
+            <div class="box-30">
+              <div class="box-desc-cardapio">
+                <p>{{ mesa.descricao }}</p>
+              </div>
+            </div>
+            <div class="box-10">
+              <div class="box-btn-lixeira text-right">
+                <button class="box-btn-lixeira">
+                  <img src="../../assets/main/edicao.png" alt="Lixeira" />
+                </button>
+                <textarea class="mesaID" #mesaID>{{ mesa.id }}</textarea>
+                <button (click)="openModalExcluir(mesaID.value)" class="box-btn-lixeira">
+                  <img
+                    src="../../assets/main/lista/lixeira.png"
+                    alt="Lixeira"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="box_modal_mesa-adicionar">
+    <app-modal-adicionar-mesa></app-modal-adicionar-mesa>
+  </div>
+  <div id="box_modal_mesa-excluir">
+    <app-modal-excluir-mesa></app-modal-excluir-mesa>
+  </div>
+</main>

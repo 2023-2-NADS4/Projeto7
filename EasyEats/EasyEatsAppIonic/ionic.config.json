@@ -1,0 +1,7 @@
+{
+  "name": "EasyEatsMobileApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

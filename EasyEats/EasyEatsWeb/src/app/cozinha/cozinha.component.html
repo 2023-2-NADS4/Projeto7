@@ -1,0 +1,46 @@
+<app-funcao-autenticadora></app-funcao-autenticadora>
+<main>
+  <div class="flex">
+    <div class="box-100">
+      <a href="/menu-restaurante">
+        <img src="../../assets/main/left-arrow.png" alt="Left Arrow" />
+      </a>
+    </div>
+  </div>
+  <div class="box-bg-cozinha">
+    <div class="box-item-cozinha" *ngFor="let pedido of pedidos" >
+      <div class="flex-between box-btn-item-lista">
+        <div class="box-100">
+          <div style="height: 40px;" class="box-img-cardapio">
+            <p>{{pedido.nomeMesa}}</p>
+          </div>
+        </div>
+        <div style="height: 30px;" class="box-100">
+          <div class="box-desc-d-cardapio">
+            <p>Pedido:</p>
+          </div>
+        </div>
+        <div class="box-100">
+          <div style="height: 30px;" class="box-desc-cardapio">
+            <p>{{pedido.nome}}</p>
+          </div>
+        </div>
+        <div class="box-100">
+          <div style="height: 30px;" class="box-desc-d-cardapio">
+            <p>Descrição:</p>
+          </div>
+        </div>
+        <div class="box-100">
+          <div style="height: 30px;" class="box-desc-cardapio">
+            <p>Não implementado</p>
+          </div>
+        </div>
+        <div class="box-100">
+          <div  class="box-btn-lixeira text-right">
+            <button (click)="Entregar(pedido.id)">Entregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

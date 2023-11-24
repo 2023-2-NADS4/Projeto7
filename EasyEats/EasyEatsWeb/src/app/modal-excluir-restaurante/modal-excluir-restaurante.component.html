@@ -1,0 +1,32 @@
+<div class="box-bg-modal text-center">
+    <div class="box-first-text-modal">
+        <p>Tem certeza que quer deletar essa conta?</p>
+        <p>Ao confirmar, todo o banco de dados do perfil será deletado permanentemente.</p>
+    </div>
+    <div class="box-btns-modal">
+        <div class="container">
+            <div class="flex-between">
+                <div class="box-50">
+                    <div class="box-btn-cancelar">
+                        <button (click)="fecharModal()" class="modal_btn_cancelar">Cancelar</button>
+                    </div>
+                </div>
+                <div class="box-50">
+                    <div class="box-btn-excluir">
+                        <button (click)="ExcluirRestaurante()">Excluir</button>
+                    </div>
+                </div>
+                <div class="box-100">
+                    <div class="box-btn-restringir">
+                        <button (click)="RestringirRestaurante()"><img src="../../assets/main/lista/cadeado.png"
+                                alt="Restringir Acesso"> Restringir Acesso</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-second-text-modal">
+        <p>Você pode apenas restringir o acesso tirando o </p>
+        <p>restaurante do ar, mas mantendo seus dados.</p>
+    </div>
+</div>

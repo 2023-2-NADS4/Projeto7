@@ -1,0 +1,125 @@
+
+main{
+    position: relative;
+}
+
+.box-title-lista h1 {
+    color: #C3C8D4;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.box-btn-adicionar-lista button {
+    height: 55px;
+    background: linear-gradient(90.3deg, #F9903A 0.16%, #BF3900 101.62%);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Sora', sans-serif;
+    width: 60%;
+    transition: .6s all;
+}
+
+.box-btn-adicionar-lista button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.box-bg-lista {
+    background: #12353F;
+    padding: 10px 14px;
+    border-radius: 16px;
+}
+
+.box-20 p{
+  color: #C3C8D4;
+}
+
+.box-btn-item-lista {
+    background: #1D4652;
+    padding: 17px 14px;
+    border-radius: 11px;
+    margin: 15px 0;
+}
+
+.box-btn-lista button {
+    background: transparent;
+    border: none;
+    color: #C3C8D4;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .6s all;
+}
+
+.box-btn-lixeira button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: .6s all;
+}
+
+.box-btn-lista button:hover,
+.box-btn-lixeira button:hover {
+    transform: scale(1.1);
+}
+
+/* Modal */
+#box_modal_component::after{
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333b0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: .6s all ease;
+}
+
+.box-modal-component_1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.box-modal-component{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.box_modal_component_adicionar{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.box_modal_component_adicionar_1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+#box_modal_component_adicionar::after{
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333b0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: .6s all ease;
+}

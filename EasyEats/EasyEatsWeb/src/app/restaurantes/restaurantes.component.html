@@ -1,0 +1,52 @@
+<app-funcao-autenticadora></app-funcao-autenticadora>
+<main>
+    <app-header></app-header>
+
+    <div class="container">
+        <div class="flex-between">
+            <div class="box-50">
+                <div class="box-title-lista text-left">
+                    <h1>Lista</h1>
+                </div>
+            </div>
+            <div class="box-50">
+                <div class="box-btn-adicionar-lista text-right">
+                    <button (click)="openModalAdicionar()" id="add_btn">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box-bg-lista">
+            <div class="flex">
+                <div class="box-100" *ngFor="let restaurante of restaurantes">
+                    <div class="flex-between box-btn-item-lista">
+                        <div class="box-30">
+                            <div class="box-btn-lista">
+                                <button #usuario>{{ restaurante.nome }}</button>
+                            </div>
+                        </div>
+                        <div class="box-20">
+                            <p #usuario>Usuário: {{ restaurante.usuario }}</p>
+                        </div>
+                        <div class="box-20">
+                            <p #status>Status: {{ restaurante.status }}</p>
+                        </div>
+                        <div class="box-30">
+                            <div class="box-btn-lixeira text-right">
+                                <button #ID (click)="openModalDeletar(restaurante.ID)" class="box-btn-lixeira"><img
+                                        src="../../assets/main/lista/lixeira.png" alt="Lixeira"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="box_modal_component">
+        <app-modal-excluir-restaurante></app-modal-excluir-restaurante>
+    </div>
+    <div id="box_modal_component_adicionar" class="box_modal_component_adicionar">
+        <app-modal-adicionar-restaurante></app-modal-adicionar-restaurante>
+    </div>
+</main>
