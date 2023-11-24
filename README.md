@@ -1,23 +1,11 @@
-# FECAP - Fundação de Comércio Álvares Penteado
-
-<p align="center">
-<a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
-</p>
-
 # Easy Eats
 
-## E1
-
-## Integrantes: <a href="https://www.linkedin.com/in/breno-rosa-barbosa-55544918a/">Breno Barbosa</a>, <a href="https://www.linkedin.com/in/thainabeatriz/">Thaina Beatriz</a>, <a href="https://www.linkedin.com/in/esdras-mendes/">Esdras Mendes</a>, <a href="https://www.linkedin.com/in/caique-matos-055841111/">Caique Matos</a>
-
-## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno</a>, <a href="https://www.linkedin.com/in/jefferson-o-silva/">Jefferson Silva</a>, <a href="https://www.linkedin.com/in/aimarlopes/">Aimar Lopes</a>, <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco Escobar</a>, <a href="https://www.linkedin.com/in/adriano-valente-534576135/">Adriano Valente</a>
+## Integrantes: <a href="https://www.linkedin.com/in/caique-matos-055841111/">Caique Matos</a>,<a href="https://github.com/mariazinhafefe">Maria Fernanda</a>,<a href="https://github.com/pedrorodante">Pedro Rodante</a>,<a href="https://www.linkedin.com/in/thainabeatriz/">Thaina Beatriz</a>
 
 ## Descrição
 
 <p align="center">
 <img src="https://github.com/2023-1-NADS3/E1-EasyEats/assets/106892141/28af9568-7c95-4814-ab59-428899e4cfa3" alt="EASY LOGO" border="0">
- 
- 
  
 </p>
 Nós acreditamos que todos merecem ter uma experiência agradável e eficiente ao frequentar um restaurante. Sabemos que esperar por um atendimento demorado e errar os pedidos pode ser frustrante para os clientes e sobrecarregar os funcionários. 
@@ -30,17 +18,16 @@ Por isso, criamos um aplicativo web mobile que melhora o atendimento em restaura
 
 <br><br>
 
+# FECAP - Fundação de Comércio Álvares Penteado
+
+<p align="center">
+<a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
+</p>
+
 ## 🛠 Estrutura de pastas
 
 -Raiz<br>
 |<br>
-|-->ServidorNode-main<br>
-  &emsp;|-->DB SQLite<br>
-|-->_Docs<br>
-  &emsp;|-->Breno Barbosa<br>
-  &emsp;|-->Caique Matos<br>
-  &emsp;|-->Esdras Mendes<br>
-  &emsp;|-->Thaina Beatriz<br>
   &emsp;|-->_Geral<br>
   &emsp;&emsp;|-->Qualidade de Software e Teste de Componentes<br>
   &emsp;&emsp;|-->User Experience<br>
@@ -53,10 +40,6 @@ Por isso, criamos um aplicativo web mobile que melhora o atendimento em restaura
 <b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
 
 Há também 3 pastas que seguem da seguinte forma:
-
-<b>ServidorNode-main</b>: Toda a estrutura do banco de dados e do node está nesta pasta.
-
-<b>_Docs</b>: Todos os documentos relacionados ao projeto está nesta pasta.
 
 <b>easyeats</b>: A estrutura do frontend está nesta pasta.
 
